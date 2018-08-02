@@ -1,7 +1,33 @@
+@media only screen and (max-width: 1000px) {
+    .navbar{
+        flex-wrap: wrap;
+ 
+    }
+    .navbar .nav-top{
+        order: 1;
+    }
+    .navbar .navbar-logo{
+        order: 1;
+    }
+    .navbar .nav_menu{
+        order: 3;
+        width: 90%;
+    }
+}
 @media only screen and (max-width: 800px) {
     .navbar{
-        padding: 0 20px;
-        margin-top: 20px;
+        width: 90%;
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+    .navbar .nav_menu{
+        padding: 10px 0;
+    }
+    .nav_menu ul{
+        flex-wrap: wrap;
+    }
+    .nav_menu ul li{
+        margin: 20px 0;
     }
     .header-text{
         text-align: center;
@@ -14,7 +40,12 @@
     .img-box{
         height: 100vh;
     }
-   
+   .skills-box1 , .experince-box{
+    background-color:   #fff;
+    }
+    .education-box , .skills-box2{
+    background-color:   rgb(245, 245, 245);
+    }
     .header-text h3 {
         font-size: 1.5em;
     }
@@ -22,6 +53,12 @@
     .header-text h2 , .box h2 {
         font-size: 2.5em;
         font-weight: bold;
+    }
+    .emailFormContainer{
+        bottom: 100px;
+        padding: 15px;
+        height: 80vh;
+        width: 70%;
     }
     .contact-box h2{
         font-size: 2em;
@@ -35,9 +72,9 @@
         height: 12px;
         width: 40px;
     }
-}
 
-@media only screen and (max-width: 400px) {
+}
+@media only screen and (max-width: 425px) {
     .navbar{
         text-align: center;
     }
@@ -47,7 +84,12 @@
     .box {
         padding: 1em;
     }
-    
+    .skills-box1 , .experince-box{
+    background-color:   #fff;
+    }
+    .education-box , .skills-box2{
+    background-color:   rgb(245, 245, 245);
+    }
     .header-text h2 , .box h2 {
         font-size: 2em;
         font-weight: bold;
@@ -67,14 +109,33 @@
     }
     .list-box , .section-text , .exp-box , .study-list , .contact-box2{
         padding: 0;
-        width: 90%;
+        width: 100%;
     }
     .contact-box2>button{
-        width: 100%;
-        height: 35px;
+        width: 70%;
+        font-size: 0.8em;
     }
     .em{
         height: 8px;
         width: 30px;
+    }
+    footer a{
+        order:1;
+        margin-bottom: 10px;
+    }
+    footer p{
+        order:3;
+    }
+    footer div{
+        order: 2;
+    }
+    .footer-div i{
+    margin: 5px;
+    }
+    .emailFormContainer{
+        bottom: 120px;
+        padding: 10px;
+        height: 80vh;
+        width: 90%;
     }
 }

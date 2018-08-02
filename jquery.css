@@ -1,0 +1,53 @@
+ .ahmed{
+	color:red;
+}
+.ahmed2{
+	font-size: 1em;
+	color:green;
+	font-family: fantasy;
+	margin-bottom: 150px;
+}
+.menu{
+    background-color: aqua;
+    width: 45%;
+    height: 40vh;
+     
+}
+.menu ul{
+    border-top-right-radius:40%;
+    background-color: blueviolet;
+    width: 50%;
+    height: 45vh;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+.menu ul li{
+    color: #000; 
+    font-size:30px;
+    padding: 10px;
+    font-family: fantasy;
+}
+.menu ul li:hover{
+    cursor: pointer;
+}
+.menu ul li:hover:before{
+    content: '';
+    background-color: #000;
+    height: 4px;
+    width: 20px;
+    position: absolute;
+    margin-top: 18px;
+    margin-left:-35px ;
+}
+.menu ul li:hover:after{
+    content: '';
+    background-color: #000;
+    height: 4px;
+    width: 20px;
+    position: absolute;
+    margin-top: 18px;
+    margin-left:5px ;
+}
