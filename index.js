@@ -17,3 +17,8 @@ $(document).ready(function(){
     	$('.emailFormContainer').toggleClass('showEmailForm');
     });
 });
+$(document).ready(function() {
+    $( ".progress-bar" ).animate({
+      opacity: 1,
+    }, 5000 );
+  });

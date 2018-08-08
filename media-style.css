@@ -133,8 +133,7 @@
     margin: 5px;
     }
     .emailFormContainer{
-        bottom: 120px;
-        padding: 10px;
+        padding-top:50px ;
         height: 80vh;
         width: 90%;
     }
