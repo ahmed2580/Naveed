@@ -99,7 +99,30 @@
         width: 80%;
     }
     .header-text h3 {
-        font-size: 1.4em;
+        font-size: .8em;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        animation: type 7s steps(20) infinite;
+        white-space: nowrap;
+    }
+    @keyframes type {
+        0%{
+            width: 0;
+        }
+        30%{
+            width: 100%;
+        }
+        80%{
+            width: 100%;
+        }
+        85%{
+            width: 0;
+        }
+        100%{
+            width: 0;
+        }
     }
     .list-skills>span{
         font-size: 70%;
