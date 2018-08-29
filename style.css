@@ -144,13 +144,13 @@ header .intro{
     box-shadow: 2px 12px 33px -6px rgba(0,0,0,0.75);
 }
 
-.nav-top .nav_menu{
-    /* width:100% ; */
-    /* margin: 0 auto; */
+/*.nav-top .nav_menu{
+    width:100% ; 
+    /* margin: 0 auto;
 }
 nav{
-    /* margin: 0 auto; */
-    /* display: none; */
+    margin: 0 auto; */
+    /* display: none;
 }
 
 /* .nav_menu ul {
