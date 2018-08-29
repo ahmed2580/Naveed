@@ -2,11 +2,6 @@ $(document).ready(function(){
     $('#menuBtn').click(function(e){
       e.preventDefault();
         $('#menu>nav').fadeToggle();
-  //       $('#social').fadeToggle(100);
-		// $('.header-text h2').fadeToggle(100);
-  //       // $('span').toggleClass('ahmed');
-  //       $('.header-text h2').toggleClass('ahmed2');
-  //       $('.header-text h3 , .header-text a  ').fadeToggle();
         
     });
 

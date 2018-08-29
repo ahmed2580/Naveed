@@ -1,5 +1,5 @@
 body , *{
-   
+    margin: 0;
     box-sizing: border-box;
     font-family: 'Merriweather', serif;
 }
@@ -8,17 +8,20 @@ a{
 }
 section{
     width: 100%;
-    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;
+
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
 }
 .em{
-    height: 15px;
+    height: 5px;
     width: 50px;
     background-color: #000;
-    margin-left: 50px;
+    margin: 40px 50px;
 }
 
 div.box {
@@ -30,19 +33,33 @@ div.box {
 
 /* Header Sections */
 header{
-    height: 100vh;
+    height: 95vh;
     width: 100%;
 }
+#bg-video{
 
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: auto;
+    position: absolute;
+    z-index: -999;
+
+}
 header .intro{
-    /* background: url('images/img13.jpg'); */
+    position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
+    
 }
 .intro{
-    
-    color: #000;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -57,12 +74,13 @@ header .intro{
     align-items: center;
 }
 .navbar .navbar-logo{
-    color: #000;
+    color: #fff;
     font-size: 2em;
+    
 }
 .navbar .menuBtn{
     border: none;
-    color: #000;
+    color: white;
     padding: 12px 16px;
     height: 8px;
     width: 200px;
@@ -75,10 +93,12 @@ header .intro{
 .header-text{
     text-align: center;
     margin-bottom: 150px;
+    text-shadow: 0 0 15px #000;
 }
 .header-text h2 {
     font-size: 4em;
     font-weight: bold;
+    
     
 }
 .header-text h3 {
@@ -86,7 +106,7 @@ header .intro{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    animation: types 7s steps(20) infinite;
+    animation: types 5s steps(20) infinite;
     white-space: nowrap;
 }
 @keyframes types {
@@ -108,14 +128,13 @@ header .intro{
 }
 
 .header-text>a {
-    border: 2px solid  rgb(1, 1, 1);
-    color: rgb(71, 71, 71);
+    border: 2px solid  #fff;
     border-radius: 50%;
     padding: 10px;
+    color: #fff;
     display: block;
     width: 40px;
     height: 40px;
-
     margin: 4vh auto;
     transition: all 0.1s ease-in-out;
 }
@@ -127,53 +146,35 @@ header .intro{
 
 .nav-top .nav_menu{
     /* width:100% ; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 nav{
-    margin: 0 auto;
-    display: none;
+    /* margin: 0 auto; */
+    /* display: none; */
 }
 
-.nav_menu ul{
+/* .nav_menu ul {
     margin :0;
-    border:1px solid  #333;
     width: 100%;
-    text-align: center;
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end;
     padding: 0 20px;
     order: 2;
-}
+} */
 
-.nav_menu ul li{
+/* .nav_menu ul li , .contact>ul li {
     box-sizing: border-box;
-    color: #000; 
+    color: #fff; 
     font-size:1em;
     opacity: 0.9;
-    font-family: fantasy;
     padding: 0 10px;
 }
-.nav_menu ul li:hover{
+.nav_menu ul li:hover .contact ul li:hover{
     cursor: pointer;
     color: rgb(96, 87, 69);
-}
-/* #menu ul li:hover:before , #menu ul li:hover:after{
-    content: '';
-    background-color: #000;
-    height: 4px;
-    width: 20px;
-    position: absolute;
-    margin-top: 18px;
-    
-}
-#menu ul li:hover:before{
-    margin-left:-25px ;
-}
-#menu ul li:hover:after{
-    margin-left:5px ;
 } */
+
 
 .img-box{
     background: url('images/img05.jpg');
@@ -193,7 +194,7 @@ nav{
 }
 .skills-box1{
     background-color:   rgb(245, 245, 245);
-    height: 100%;
+    height: auto;
 
 }
 .skills-box2{
@@ -226,10 +227,15 @@ nav{
     height: auto;
 }
 .section-text>p{
-    padding-top: 2em;
+    padding-top: 1em;
 }
-.section-text p b a{
-    color: blue;
+.section-text p a {
+    color: #000;
+    text-decoration: underline;
+}
+.contact p a {
+    color: #fff;
+    text-decoration: underline;
 }
 .skills-icons{
     display: flex;
@@ -241,7 +247,7 @@ nav{
 .list-box {
     margin: 10% auto ;
     justify-content: space-around;
-    width: 80%;  
+    /* width: 80%;   */
 }
 .list-skills{
     width: 100%;
@@ -264,7 +270,6 @@ opacity: 0;
 }
 .list-skills>span{
     flex: 2;
-    font-weight: bold;
     font-size: 100%;
     min-width :92.5px;
 }
@@ -272,12 +277,16 @@ opacity: 0;
 /* Education & Experince */
 
 .study-list , .job-list{
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 1em auto;
     transition:0.5s;
+    padding: 1em;
+}
+.school-list h4{
+    margin: 10px auto;
 }
 .study-list>span , .job-list>span{
     flex: 1;
@@ -301,50 +310,92 @@ opacity: 0;
     background-color: #fff;
     border-radius:5px; 
 }
-.contact-mainbox{
-    width: 100%;
-    height: 100vh;
-    background-color: #686886;
-    color: #fff;
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
-}
 
+/*  Contact Section */
+
+.contact-mainbox{
+    min-width: 100%;
+    min-height: 100%;
+    height: 100vh;
+    background-image: url("./images/img11.jpg");
+    background-size:cover; 
+    background-repeat: no-repeat;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center; 
+    
+}
 .contact-box h2{
     padding: 50px;
     font-size: 2.5em; 
 } 
-
 .contact-box2 , .contact-box h2{
-    width: 60%;
-    text-align: center;
     display: flex; 
-    justify-content: center;
+    /* width: 100%; */
+    flex-direction: column;
+    text-align: center;
     align-items: center; 
+    color:#fff;
+    text-shadow: 2px 2px 15px #000;
+    background-color: rgba(0, 0, 0, 0.5);
     margin: 0 auto;
-    color: #fff; 
 }
-.contact>p{
-    text-align: left;
-    padding: 0 5vh ;
+.contact{
+    width: 70%;
+    line-height: 2em;
+    text-align: center;
+    padding: 2vh ;
+    margin: 0 8vh;
+    border-radius:5px; 
+    font-size: 1.4em;
+    text-shadow: 0 1px 0 #000;
+    border:  double #fff;
+    
+}
+.contact p{
+    padding: 2em;
+    font-weight: bold;
+    
+}
+.contact ul , .nav_menu nav ul{
+    justify-content: space-around;
+    display: flex;
+    list-style: none;
+    
+}
+.nav_menu {
+    width: 25%;
+}
+.contact ul li a , .nav_menu nav ul li a{
+    color: #fff;
+    line-height: 2em;
+}
+.nav_menu nav ul li a:hover{
+    color: rgba(182, 176, 176, 0.987);
+    text-shadow: 0 0 15px #721b05;
+}
+.contact ul li a:hover  {
+    color: #000;
+    text-shadow: 0 0 15px #fff;
 }
 .contact-box2>button{
     color: #fff;
-    background-color: #6acfad;
-    width: 30%;
+    background-color:rgba(0,0,0,0.5);
     height: 50px;
     border-radius:5px; 
-    font-size: 1.2em;
+    font-size: 1.8em;
+    margin-top: 50px; 
    
 }
-.contact-box2>button:hover{
-    background-color: hsl(160, 56%, 67%);
+.contact-box2>button:hover {
+    background-color: #fff;
+    color: rgba(0,0,0,0.9);
 }
+
 footer{
     padding: 5vh;
-    background-color: #4c4c77;
-    border: 1px solid #fff;
+    color: #fff;
+    background-color: #000;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -354,7 +405,7 @@ footer{
 }
 .footer-logo{
     font-size: 1.5em;
-    color: #000;
+    color: #fff;
 }
 footer p{
     text-align: center;
@@ -391,7 +442,7 @@ footer p{
     border-radius: 4px;
     cursor: pointer;
     font-size: 1em;
-    width: 80px;
+    width: 80px;  
 }
 .emailFormContainer input[type=button] {
     background-color: #ff8080;
@@ -403,7 +454,6 @@ footer p{
 .emailFormContainer input[type=submit]:hover {
     background-color: #45a049;
 }
-
 .emailFormContainer {
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -417,8 +467,10 @@ footer p{
     -webkit-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+    text-align: center;
 }
 .showEmailForm{
     display: block
 }
+
 

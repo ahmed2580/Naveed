@@ -17,26 +17,24 @@
 <body>
     <header>
         <div class="intro">
+                <video id="bg-video" type="video/mp4" src="./images/City - 5624.mp4" autoplay loop></video>
             <div class="navbar">
                 <a class="navbar-logo" href="#"> <span> <b>Naveed</b></span>Ahmed</a>
                 <div id="menu" class="nav_menu">
                     <nav>
                         <ul>
-                           <a href="#about"><li>About Me</li></a> 
-                           <a href="#skills-section"><li>Skills</li></a>
-                           <a href="#Edu-Exp"><li>Experince/Education</li></a>
-                           <a href="#contact"><li>Contact Me</li></a>
-                           <a href="https://github.com/search?q=ahmed2580" target="_blank"><li> <i class="fab fa-github-square fa-2x"></i></li></a> 
-                           <a href="https://wa.me/4915210801306?text="><li><i class="fab fa-whatsapp fa-2x"></i></li></a>
-                           <!-- <a href="https://api.skype.com/send?phone=naveed3star"><li><i class="fab fa-skype fa-2x"></i></li></a> -->
+                            <li><a href="./images/Naveed (CV).pdf" download target="_blank"> Download CV</a></li>
+                            <li><a href="https://github.com/search?q=ahmed2580" target="_blank"> <i class="fab fa-github-square fa-2x"></i></a></li>
+                            <li><a href="https://wa.me/4915210801306?text="><i class="fab fa-whatsapp fa-2x" target="_blank"></i></a></li>                               
                         </ul>
                     </nav>
 
                 
                 </div>
-                <div id="nav-top" class="nav-top">
+                <!-- <div id="nav-top" class="nav-top">
                  <a href="#" id="menuBtn" class="menuBtn"><i class="fa fa-bars fa-2x"></i></a> 
-                </div>
+                </div> -->
+                
             </div>
 
             <!-- Header -->
@@ -47,7 +45,6 @@
             </div> 
         </div>
        
-        
     </header>    
         <section id="about">
             <div class="img-box box" >
@@ -79,15 +76,21 @@
             <div class="skills-box2 box">
                 <div class="list-box">        
                     <div class="list-skills" >
-                        <span>Terminal Basics :</span>
+                        <span>Terminal <br>Basics :</span>
                         <div class="progress">
                             <div class="progress-bar"  style="width: 70%"></div>
                         </div>
                     </div>
                     <div class="list-skills">
-                        <span>HTML & CSS :</span>
+                        <span>HTML :</span>
                         <div class="progress">
-                            <div class="progress-bar"  style="width: 80%"></div>
+                            <div class="progress-bar"  style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="list-skills">
+                        <span>CSS :</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 75%"></div>
                         </div>
                     </div>
                     <div class="list-skills">
@@ -114,6 +117,8 @@
                             <div class="progress-bar" style="width: 60%"></div>
                         </div>
                     </div> 
+                </div> 
+                <div class="list-box">
                     <div class="list-skills">
                         <span>JavaScript :</span>
                         <div class="progress">
@@ -149,7 +154,13 @@
                         <div class="progress">
                             <div class="progress-bar" style="width: 65%"></div>
                         </div>
-                    </div>                
+                    </div>   
+                    <div class="list-skills">
+                        <span>React  :</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 45%"></div>
+                        </div>
+                    </div>             
                     </div>
                 </div>         
             </div>
@@ -234,24 +245,25 @@
                 <div class="contact-box">
                     <h2 class="headerh2 ">I am looking for a challenging job! </h2>
                 <div class="contact-box2" >
-                        <button type="button" id='openForm'>Contact Me</button>
                         <div class="contact">   
                             <p>I am always highly enthused about my work and tasks ahead. In September, I will graduate from <a href="https://digitalcareerinstitute.org/en/" target="_blank"> <b>Digital Career Institute Düsseldorf</b> </a>, and I' m ready for new challenges.</p>
+                            <ul>
+                                <li><a href="./images/Naveed (CV).pdf" download target="_blank"> Download CV</a></li>
+                                <li><a href="https://github.com/search?q=ahmed2580" target="_blank"> <i class="fab fa-github-square fa-2x"></i></a></li>
+                                <li><a href="https://wa.me/4915210801306?text="><i class="fab fa-whatsapp fa-2x" target="_blank"></i></a></li>                               
+                            </ul>
                         </div>
+                        <button type="button" id='openForm'>Contact Me</button>
                         <div class="emailFormContainer">
                           <form action="https://formspree.io/naveed3star@gmail.com" method="POST">
                             <label for="fname">Name</label>
                             <input type="text" id="fname" name="firstname" placeholder="Enter Your name ..">
-
-                            <label for="lname">E Mail</label>
+                            <label for="lname">E-Mail</label>
                             <input type="text" id="lname" name="lastname" placeholder="Enter E-Mail ..">
-
                             <label for="subject">Subject</label>
                             <textarea id="subject" name="subject" placeholder="Write something .." style="height:200px"></textarea>
-
                             <input type="submit" value="Submit">
-                            <input type='button' id='closeForm' value="close">
-
+                            <input type='button' id='closeForm' value="Close">
                           </form>
                         </div>
                     </div>
@@ -263,16 +275,12 @@
             <a class="footer-logo" href="#"> <span> <b>Naveed</b></span>Ahmed</a>
             <p> © 2018 Copyright</p>
             <div class="footer-div">
-                <!-- <a href="https://github.com/search?q=ahmed2580"><i class="fab fa-github-square"></i>ahmed2580</a> -->
-                <!-- <a href="https://api.whatsapp.com/send?phone=+4915210801306"><i class="fab fa-whatsapp"></i></a> -->
                 <span><i class="fas fa-phone-volume"></i>  + 0 152 10801306</span>
                 <span><i class="fas fa-envelope"></i> naveed3star@gmail.com</span>
                 <span><i class="fas fa-home"></i> Brulandstraße 29, 48301 Nottuln</span>
                 
             </div>
         </footer>   
-        
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
     <script src="jquery-3.3.1.min.js"></script>
     <script src="index.js"></script>
 </body>
