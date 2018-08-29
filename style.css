@@ -144,38 +144,6 @@ header .intro{
     box-shadow: 2px 12px 33px -6px rgba(0,0,0,0.75);
 }
 
-/*.nav-top .nav_menu{
-    width:100% ; 
-    /* margin: 0 auto;
-}
-nav{
-    margin: 0 auto; */
-    /* display: none;
-}
-
-/* .nav_menu ul {
-    margin :0;
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    padding: 0 20px;
-    order: 2;
-} */
-
-/* .nav_menu ul li , .contact>ul li {
-    box-sizing: border-box;
-    color: #fff; 
-    font-size:1em;
-    opacity: 0.9;
-    padding: 0 10px;
-}
-.nav_menu ul li:hover .contact ul li:hover{
-    cursor: pointer;
-    color: rgb(96, 87, 69);
-} */
-
-
 .img-box{
     background: url('images/img05.jpg');
     background-size: cover;
@@ -247,7 +215,6 @@ nav{
 .list-box {
     margin: 10% auto ;
     justify-content: space-around;
-    /* width: 80%;   */
 }
 .list-skills{
     width: 100%;
@@ -325,19 +292,20 @@ opacity: 0;
     align-items: center; 
     
 }
+.contact-box{
+    background-color: rgba(0, 0, 0, 0.5);
+}
 .contact-box h2{
     padding: 50px;
     font-size: 2.5em; 
 } 
 .contact-box2 , .contact-box h2{
     display: flex; 
-    /* width: 100%; */
     flex-direction: column;
     text-align: center;
     align-items: center; 
     color:#fff;
     text-shadow: 2px 2px 15px #000;
-    background-color: rgba(0, 0, 0, 0.5);
     margin: 0 auto;
 }
 .contact{

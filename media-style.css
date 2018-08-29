@@ -188,6 +188,59 @@
     .list-box{
         justify-content: flex-start;
     }
+
+.contact-mainbox{
+    min-width: 100%;
+    min-height: 100%;
+    height: 100vh;
+    /* display: flex; 
+    justify-content: space-around;
+    align-items: center;  */
+    
+}
+
+.contact-box h2{
+    font-size: 1.5em; 
+} 
+.contact-box{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.contact-box2 , .contact-box h2{
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+    align-items: center; 
+    color:#fff;
+    text-shadow: 2px 2px 15px #000;
+    margin: 0 auto;
+}
+.contact{
+    width: 80%;
+    line-height: 1.2em;
+    text-align: center;
+    padding: 2vh ;
+    margin: 0 8vh;
+    font-size: 1.4em;
+    text-shadow: 0 1px 0 #000;
+    
+}
+.contact p{
+    padding: .2em;
+    font-weight: normal;
+}
+.contact ul , .nav_menu nav ul{
+    justify-content: space-around;
+    display: flex;
+    list-style: none;
+    
+}
+.nav_menu {
+    width: 25%;
+}
+.contact ul li a , .nav_menu nav ul li a{
+    color: #fff;
+    line-height: 2em;
+}
     .contact-box2>button{
         width: 70%;
         font-size: 0.8em;
