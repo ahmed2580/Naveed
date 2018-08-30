@@ -214,7 +214,7 @@ header .intro{
 
 .list-box {
     margin: 10% auto ;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .list-skills{
     width: 100%;
@@ -237,8 +237,9 @@ opacity: 0;
 }
 .list-skills>span{
     flex: 2;
-    font-size: 100%;
+    font-size: 14px;
     min-width :92.5px;
+    
 }
 
 /* Education & Experince */
