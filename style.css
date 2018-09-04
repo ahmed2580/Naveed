@@ -89,6 +89,7 @@ header .intro{
     transform: translate(-50% , -50%);
     font-size: 20px;
     cursor: pointer;
+   
 }
 .header-text{
     text-align: center;
@@ -128,20 +129,23 @@ header .intro{
 }
 
 .header-text>a {
-    border: 2px solid  #fff;
+    position: relative;
+    font-size: 2em;
     border-radius: 50%;
-    padding: 10px;
-    color: #fff;
-    display: block;
-    width: 40px;
-    height: 40px;
-    margin: 4vh auto;
-    transition: all 0.1s ease-in-out;
+    animation: arrow-up 5.0s infinite;
+    color:#fff;
+    padding: 0.1em;
+    box-shadow: 1px 6px 33px -6px rgba(212, 193, 193, 0.75);
+}
+@keyframes arrow-up{
+    0%{top:0px}
+    50%{top:  50px; color: green;   }
+    100%{top:0px }
 }
 .header-text>a:hover {
-    -webkit-box-shadow: 2px 12px 33px -6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 12px 33px -6px rgba(231, 211, 211, 0.75);
     -moz-box-shadow: 2px 12px 33px -6px rgba(0,0,0,0.75);
-    box-shadow: 2px 12px 33px -6px rgba(0,0,0,0.75);
+    box-shadow: 2px 12px 33px -6px rgba(212, 193, 193, 0.75);
 }
 
 .img-box{
@@ -341,7 +345,7 @@ opacity: 0;
 }
 .nav_menu nav ul li a:hover{
     color: rgba(182, 176, 176, 0.987);
-    text-shadow: 0 0 15px #721b05;
+    text-shadow: 1px 6px 15px green;
 }
 .contact ul li a:hover  {
     color: #000;
